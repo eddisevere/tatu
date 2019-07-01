@@ -1,0 +1,483 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Times New Roman;
+	background-color: #999;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	transition: 1.5s;
+}
+
+/*перекрытие браузерного свечения кнопок при нажатии*/
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+input:active, input:focus {
+  outline: none !important;
+}
+input::-moz-focus-inner {
+  border: 0 !important;
+}
+
+
+/*стили блока 1*/
+header{
+	background: url(img/images/header.jpg) no-repeat center center;
+	background-size: cover;
+	height: 500px;
+}
+
+.navbar-default{
+	background-color: rgba(0, 0, 0, 0); 
+    border-color: rgba(0, 0, 0, 0); 
+}
+
+.navbar-default .navbar-collapse{
+	border-color: rgba(0,0,0,0);
+}
+
+.nav li a{
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0px;
+	padding-bottom: 8px;
+}
+
+			/*стили блока 2*/
+			.dog{
+				background: url('img/images/studi_02.jpg') no-repeat center;
+				background-size: cover;
+			}
+			
+			.about{
+				transition: 1.5s;
+				color: #000;
+			    background-color: rgba(0,0,0,0);
+			    border: 10px solid #000;
+			    text-transform: uppercase;
+			    font-size: 24px;
+			    font-weight: bold;
+			    width: 280px;
+			    height: 80px;
+			}
+
+			.about:hover{
+				transform: scale(1.1);
+                transition: transform 0.7s;
+			}
+			
+			.we_are{
+				height: 500px;
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}
+			
+			.pic-one{
+				display: flex;
+			    justify-content: center;
+			    flex-wrap: wrap;
+			}
+			
+			.studio{
+				float: left;
+			}
+
+			/*скрытые иконки студия*/
+			.portfolio ul,
+			.portfolio li{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				list-style-type: none;	
+			
+				display: flex;
+			    justify-content: center;
+			    flex-wrap: wrap;							
+			}
+			
+			.portfolio li{
+				display: inline-block;
+				position: relative;
+				width: 250px;
+				overflow: hidden;
+			}
+			
+			.portfolio img{
+				max-width: 100%;
+				display: block;
+			}
+			
+			.descr{
+				position: absolute;
+				/*сделать 100%*/
+				top: 100%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding-top: 100px;
+				text-align: center;
+				background-color: rgba(0,0,0,.3);
+				opacity: 0;
+				/*удалить*/
+				/*transform: scale(0)*/
+				/*закрученное проявление*/
+				/* rotate(90deg) */;
+				
+				-webkit-trancition: all .5s;
+				-o-transition: all .5s;
+				transition: all .5s; 
+			}
+			
+			.descr a{
+				color: #000
+			}
+			
+			.descr a:hover{
+				color: #fff;
+			}
+			
+			.portfolio li:hover .descr{
+				display: block;
+				opacity: 1;
+				top: 0;
+				/*удалить*/
+				/* transform: scale(1)
+				закрученное проявление
+				rotate(0deg); */
+			}
+/*стили блока 3*/
+#john_doe{
+	height: 350px;
+	background: url('img/images/hands_02.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+    align-items: center;
+}
+
+.align-self-center{
+	padding-top: 48px;
+	text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+small{
+	text-transform: uppercase;
+	color: #fff;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 20%;
+    font-size: 16px;
+}
+
+
+				.team{
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+				}
+
+				.example{
+					display:inline-block;
+					position:relative;
+				}
+
+				.example span{
+					display:inline-block;
+					position:absolute;
+					top:193px;
+					left:103px;
+				}
+
+				.twins{
+					display:inline-block;
+					position:relative;
+				}
+
+				.twins span{
+					display:inline-block;
+					position:absolute;
+					top:124px;
+					left:0px;
+				}
+
+				.twins h2{
+					text-align: center;
+					padding-bottom: 53px;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				.twins p{
+					padding: 0 48px;
+				}
+
+				.valid{
+					padding: 45px 48px 0 48px;
+					display: flex;
+					justify-content: space-between;
+				}
+
+				.valid a{
+					color: #000
+				}
+
+				.valid a:hover{
+					color: #00CAEA	
+				}
+
+				.valid i{
+					transition: 1.5s;
+					font-size: 35px;
+				}
+
+				.valid i:hover{
+					transform: scale(1.3);
+                    transition: transform 0.7s;
+				}
+
+				.form{
+					display:inline-block;
+					position:relative;
+				} 
+
+				.form span{
+					display:inline-block;
+					position:absolute;
+					top:156px;
+					left:105px;
+				}
+
+				.form h4{
+					margin: 0;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: bold;
+				}
+
+				.form p{
+					text-transform: uppercase;
+					font-size: 14px;
+				}
+
+				.form input{
+					text-transform: uppercase;
+					width: 95%;
+					height: 40px;
+					padding-left: 22px;
+					margin-bottom: 22px;
+					border: 1px solid #000;
+				}
+
+				.form button{
+				    text-transform: uppercase;
+					background-color: #9D9879;
+    				color: #fff;
+					width: 95%;
+					height: 40px;
+				}
+
+				.form button:hover{
+					color: #fff;
+					background-color: #00CAEA;
+				}
+
+.twitt{
+	background: url('img/images/sum_02.jpg') no-repeat;
+	background-size: cover;
+	height: 350px;
+	display: flex;
+}	
+
+.text_twitt{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}	
+
+.rt{
+	font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}	
+
+.bird{
+	display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding-bottom: 37px;
+}
+
+							.gallery .gray{
+								background-color: #B2AD9D;
+							    width: 600px;
+							    height: 300px;
+							    display: flex;
+							    align-items: center;
+							    justify-content: center;
+							}			
+
+							.gallery .portfolio li{
+								width: 300px
+							}
+.contact_us{
+	background-color: #E8E6D0;
+}
+
+.contact_us .gray{
+	margin-top: 183px;
+    margin-bottom: 25px;
+}
+
+
+.work{
+	display: flex;
+    text-align: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 83px;
+    margin-bottom: 46px;
+}
+
+.work h4{
+	font-weight: bold;
+	text-transform: uppercase;
+}	
+
+.work span{
+	font-weight: bold;
+}
+
+		.form-horizontal .btn{
+			margin-bottom: 165px;
+			margin-top: 60px;
+		    background-color: #9D9879;
+		    text-transform: uppercase;
+		    width: 370px;
+		    height: 60px;
+		}	
+
+		.email{
+			margin: 60px 0;
+		}
+
+					footer{
+						background-color: #AFAFAF;
+					}		
+
+#map{
+	width: 100%;
+	height: 500px
+}
+
+.topbutton {
+text-transform: uppercase;
+font-weight: bolder;
+text-decoration: none!important;
+width:80px;
+border:5px solid #000;
+text-align:center;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#000;
+font-size:20px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+opacity: 0.5;
+}
+
+.topbutton:hover{
+	border-color: #fff;
+	opacity: 1;
+	background-color: #fff;
+	color: 000!important;
+	transform: scale(1.3);
+	transition: transform 0.7s;
+}
+
+/*медиа запрос больше 767px*/
+/*БЛОК-1*/
+@media screen and (min-width: 767px){
+
+.logo{
+	padding-top: 30px;
+}
+
+.nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav li a:hover{
+	background: rgba(0, 0, 0, 0);
+	border-bottom: 2px solid #000
+}
+}
+
+/*медиа запрос меньше 767px*/
+@media screen and (max-width: 767px){
+/*БЛОК-2*/
+.lore{
+	width: auto!important;
+}
+
+.team .width{
+	width: 300px					
+}
+
+.gallery .gray {
+	width: 300px;
+}
+
+.valid{
+	padding: 20px 10px;
+}
+
+.form-horizontal .btn{
+	width: 280px;
+}
+
+.example span{
+	top: 110px;
+	left: 10px;
+}
+
+.form span{
+	top: 70px;
+	left: 24px;
+}
+
+.twins span{
+	top: 0;
+	padding-bottom: 0;
+}
+
+.twins h2{
+	padding-bottom: 0
+}
+
+.twins p{
+	padding: 0 25px;
+}
+
+}
